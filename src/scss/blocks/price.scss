@@ -1,0 +1,39 @@
+.price {
+  max-width: 240px;
+  max-height: 200px;
+  border: $color-lightest-gray__background solid 1px;
+  border-radius: 6px;
+  background-color: $color-white__background;
+  &__content {
+    margin: 0;
+    max-width: 240px;
+    max-height: 200px;
+    color: $color-black__text;
+    box-sizing: border-box;
+    background: $color-white__background;
+    border-radius: 6px;
+    padding: 16px;
+    padding-right: 0;
+  }
+  &__term {
+    font-size: $font-size-14;
+    color: $color-dark-gray__text;
+    font-weight: $font-weight-500;
+  }
+  &__description {
+    font-size: $font-size-14;
+    color: $color-black__text;
+    margin-bottom: 16px;
+    font-weight: $font-weight-500;
+  }
+  &__button {
+    display: block;
+    width: 119px;
+    height: 32px;
+    margin: auto 16px 16px auto;
+    background-image: url(../img/zakaz.svg);
+    position: absolute;
+    top: 150px;
+    right: -5px;
+  }
+}

@@ -1,0 +1,83 @@
+.mainContent {
+  max-width: 1440px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 14px;
+  @media (min-width: $screen-medium) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px 0 16px;
+    max-width: 100%;
+    height: auto;
+  }
+  &__text {
+    font-size: $font-size-16;
+    font-weight: $font-weight-400;
+    display: block;
+    max-height: 90px;
+    overflow: hidden;
+    @media (min-width: $screen-medium) {
+      display: block;
+      overflow: hidden;
+      max-width: 320px;
+      max-height: 150px;
+    }
+    @media (min-width: $screen-large) {
+      display: block;
+      overflow: hidden;
+      max-width: 490px;
+      max-height: 150px;
+    }
+  }
+
+  &__button {
+    font-size: $font-size-16;
+    font-weight: $font-weight-500;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    margin: 16px;
+    padding-left: 0;
+    align-self: flex-start;
+    &::before {
+      content: url('../img/icon.svg');
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 26px;
+    @media (min-width: $screen-medium) {
+      min-width: 360px;
+      min-height: 200px;
+    }
+    @media (min-width: $screen-large) {
+      min-width: 530px;
+    }
+  }
+}
+
+.auto {
+  min-height: 330px;
+  @media (min-width: $screen-medium) {
+    min-height: 280px;
+  }
+  @media (min-width: $screen-large) {
+    min-height: 200px;
+  }
+}

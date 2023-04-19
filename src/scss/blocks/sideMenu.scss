@@ -1,0 +1,41 @@
+.sideMenu {
+  overflow-x: scroll;
+  padding: 10px 16px 24px;
+  height: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    max-width: 1090px;
+
+    @media (min-width: $screen-large) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item:last-child {
+    @media (min-width: $screen-large) {
+      margin-top: 20px;
+    }
+  }
+  &__link {
+    font-family: $font-family__main;
+    font-size: $font-size-16;
+    font-weight: $font-weight-500;
+    color: $color-dark-gray__text;
+    padding: 8px 10px 8px 16px;
+    background-color: transparent;
+    border: none;
+    &:hover,
+    :focus {
+      cursor: pointer;
+      background: $color-white__text;
+      outline: 2px solid $color-mint__outline;
+      border-radius: 6px;
+    }
+  }
+}

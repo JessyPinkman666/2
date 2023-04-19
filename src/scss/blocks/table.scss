@@ -1,0 +1,45 @@
+.table {
+  max-width: 1120px;
+  @media (max-width: $screen-medium) {
+    display: none;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__brand {
+    margin-top: 16px;
+    margin-left: 24px;
+    @media (min-width: $screen-medium) {
+      margin-left: 32px;
+    }
+  }
+  &__brand:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__device {
+    margin-top: 16px;
+    margin-left: 24px;
+  }
+  &__brandButton--hide {
+    &::before {
+      content: url('../img/icon2.svg');
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+  &__deviceButton--hide {
+    &::before {
+      content: url('../img/icon2.svg');
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+}

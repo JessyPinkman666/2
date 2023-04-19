@@ -1,0 +1,55 @@
+.menu {
+  display: flex;
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: space-between;
+  padding: 19px 0;
+  min-height: 100%;
+  @media (min-width: $screen-large) {
+    display: none;
+  }
+  &__left {
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  &__item {
+    margin-right: 16px;
+  }
+  &__hidden {
+    display: none;
+    @media (min-width: $screen-medium) {
+      display: block;
+    }
+  }
+}
+
+.burger__cross {
+  background-image: url('/img/cross.svg');
+  width: 40px;
+  height: 40px;
+}
+
+.status__img {
+  background-image: url('/img/checkstatus.svg');
+  width: 40px;
+  height: 40px;
+}
+.search__img {
+  background-image: url('/img/search.svg');
+  width: 40px;
+  height: 40px;
+}

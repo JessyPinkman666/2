@@ -1,0 +1,53 @@
+.sheet {
+  max-width: 1440px;
+  margin: 24px;
+  @media (max-width: $screen-medium) {
+    display: none;
+  }
+  &__head {
+    font-size: $font-size-14;
+    color: $color-dark-gray__text;
+    margin-bottom: 16px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: 720px;
+    min-height: 66px;
+    background-color: $color-white__background;
+    border-bottom: 1px solid $color-asphalt__background;
+  }
+  &__cell {
+    display: inline-block;
+    min-width: 15%;
+    align-self: center;
+    &--services {
+      margin-left: 16px;
+      min-width: 50%;
+    }
+  }
+  &__button {
+    display: block;
+    border: none;
+    width: 119px;
+    height: 32px;
+    margin: 16px 16px 16px auto;
+    background-image: url(../img/zakaz.svg);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  &__text {
+    min-width: 15%;
+    &--services {
+      margin-left: 16px;
+      min-width: 50%;
+    }
+  }
+}

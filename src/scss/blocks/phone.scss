@@ -1,0 +1,79 @@
+.phone {
+  &__header {
+    margin: 0;
+    font-size: 30px;
+    color: $color-black__text;
+    padding: 20px 0 24px 16px;
+    width: 350px;
+    height: auto;
+    display: inline-block;
+    font-weight: $font-weight-700;
+    &::before {
+      content: '';
+      background-color: $color-mint__background;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      width: 4px;
+      height: 40px;
+      position: absolute;
+      margin: 0 0 0 -16px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    min-height: 48px;
+    min-width: 288px;
+    max-width: 376px;
+    margin: 16px;
+    border: 1px solid $color-lightest-gray__border;
+    border-radius: 6px;
+    text-indent: 16px;
+    font-size: $font-size-16;
+    font-weight: $font-weight-400;
+    &--message {
+      margin: 16px;
+      padding-top: 16px;
+    }
+    ::placeholder {
+      color: $color-asphalt__background;
+      font-weight: $font-weight-400;
+    }
+  }
+  &__text {
+    color: $color-black__text;
+    font-size: $font-size-14;
+    display: inline-block;
+    margin: 0 auto 0 16px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-pink__background;
+    font-size: $font-size-14;
+    display: inline;
+    :hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &__button {
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin: 19px 16px auto auto;
+    :hover {
+      cursor: pointer;
+    }
+  }
+  &__exit {
+    border: none;
+    background-color: transparent;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 24px auto auto 16px;
+    cursor: pointer;
+  }
+}

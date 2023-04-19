@@ -1,0 +1,43 @@
+.brand {
+  max-width: 240px;
+  max-height: 70px;
+  border: #eaeaea solid 1px;
+  border-radius: 6px;
+
+  &__content {
+    margin: 0;
+    color: $color-black__text;
+    box-sizing: border-box;
+    background: $color-white__background;
+    border: 1px solid $color-lightest-gray__border;
+    border-radius: 6px;
+    width: 240px;
+    height: 70px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (min-width: $screen-medium) {
+      width: 224px;
+    }
+  }
+  &__img {
+    padding: 20px 0 23px 16px;
+    cursor: pointer;
+    /*для самсунга и круглых иконок пришлось отступы отдельно задавать,т.к.
+    они странно себя вели*/
+    &--round {
+      padding: 8px 0 16px 12px;
+      cursor: pointer;
+    }
+    &--samsung {
+      padding-left: 16px;
+    }
+  }
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/go.svg);
+  }
+}

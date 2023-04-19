@@ -1,0 +1,9 @@
+.menu__button {
+  background-color: transparent;
+  width: 40px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,45 @@
+.main {
+  border-top: 2px solid $color-mint__border;
+  margin: 0 auto;
+  font-family: 'TT Lakes', sans-serif;
+  font-size: $font-size-16;
+  font-weight: $font-weight-400;
+  background-color: $color-gray__background;
+  width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  font-family: 'TT Lakes', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.visually--hidden {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+  max-width: 1440px;
+  @media (min-width: $sreen-superLarge) {
+    display: block;
+    margin: auto;
+    background-color: rgba(236, 236, 236, 0.412);
+  }
+}
+
+.body__wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}

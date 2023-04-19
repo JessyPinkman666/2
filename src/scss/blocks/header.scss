@@ -1,0 +1,18 @@
+.header {
+  min-height: 80px;
+  max-width: 1440px;
+  font-weight: $font-weight-400;
+  border-top: 1px solid $color-mint__outline;
+  background-color: $color-white__text;
+  &__caption {
+    justify-self: flex-start;
+    display: block;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  @media (min-width: $screen-large) {
+    display: none;
+  }
+}

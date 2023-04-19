@@ -1,0 +1,25 @@
+.bottomContent {
+  padding: 0 16px;
+  margin-bottom: 40px;
+  &__text {
+    font-size: $font-size-14;
+    max-height: 288px;
+    max-width: 420px;
+    font-weight: $font-weight-400;
+    color: $color-black__text;
+  }
+  &__link {
+    display: block;
+    margin-top: 16px;
+    font-size: $font-size-16;
+    color: $color-black__text;
+    font-weight: $font-weight-500;
+    &:hover {
+      cursor: pointer;
+    }
+    &--img {
+      position: relative;
+      top: 2px;
+    }
+  }
+}

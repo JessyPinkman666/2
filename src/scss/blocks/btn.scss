@@ -1,0 +1,36 @@
+.btn {
+  font-size: $font-size-16;
+  font-weight: $font-weight-500;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  margin: 16px;
+  padding-left: 0;
+  align-self: flex-start;
+  margin-left: 56px;
+  margin-top: 24px;
+  &::before {
+    content: url('../img/icon.svg');
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  &__hide {
+    &::before {
+      content: url('../img/icon2.svg');
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    border: 1px solid $color-mint__outline;
+    border-radius: 6px;
+    background-color: $color-mint__outline;
+  }
+}

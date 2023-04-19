@@ -1,0 +1,32 @@
+.device {
+  max-width: 240px;
+  max-height: 160px;
+  border-radius: 6px;
+  &__content {
+    border: #eaeaea solid 1px;
+    min-width: 240px;
+    min-height: 160px;
+    background-color: $color-white__background;
+  }
+  &__text {
+    font-size: $font-size-16;
+    color: $color-black__text;
+    margin: 16px;
+    font-weight: $font-weight-500;
+  }
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/go.svg);
+    position: relative;
+    top: 50px;
+    left: 184px;
+    &:hover {
+      cursor: pointer;
+    }
+    &__item {
+      background-color: $color-white__text;
+    }
+  }
+}
