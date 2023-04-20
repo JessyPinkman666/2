@@ -1218,8 +1218,8 @@ body {
   background-color: #ffffff; }
   .price__content {
     margin: 0;
-    max-width: 240px;
-    max-height: 200px;
+    width: 240px;
+    height: 200px;
     color: #1b1c21;
     box-sizing: border-box;
     background: #ffffff;
@@ -1235,7 +1235,7 @@ body {
     color: #1b1c21;
     margin-bottom: 16px;
     font-weight: 500; }
-  .price__button {
+  .price__link {
     display: block;
     width: 119px;
     height: 32px;
@@ -1243,7 +1243,8 @@ body {
     background-image: url(./static/zakaz.svg);
     position: absolute;
     top: 150px;
-    right: -5px; }
+    right: -5px;
+    background-color: transparent; }
 
 .sheet {
   max-width: 1440px;
@@ -1273,6 +1274,7 @@ body {
   .sheet__button {
     display: block;
     border: none;
+    background-color: transparent;
     width: 119px;
     height: 32px;
     margin: 16px 16px 16px auto;
