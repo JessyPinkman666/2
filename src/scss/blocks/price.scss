@@ -6,8 +6,8 @@
   background-color: $color-white__background;
   &__content {
     margin: 0;
-    max-width: 240px;
-    max-height: 200px;
+    width: 240px;
+    height: 200px;
     color: $color-black__text;
     box-sizing: border-box;
     background: $color-white__background;
@@ -26,7 +26,7 @@
     margin-bottom: 16px;
     font-weight: $font-weight-500;
   }
-  &__button {
+  &__link {
     display: block;
     width: 119px;
     height: 32px;
@@ -35,5 +35,6 @@
     position: absolute;
     top: 150px;
     right: -5px;
+    background-color: transparent;
   }
 }
