@@ -8,6 +8,7 @@
   z-index: 4;
   display: flex;
   justify-content: right;
+  overflow-Y: auto;
   &__wrapper {
     min-height: 100%;
     min-width: 320px;
