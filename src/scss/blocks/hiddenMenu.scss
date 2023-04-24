@@ -1,17 +1,18 @@
 .hiddenMenu {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: left;
-  z-index: 1;
+  z-index: 20;
   @media (min-width: $sreen-superLarge) {
     background-color: transparent;
     position: static;
     display: block;
   }
   &__wrapper {
-    min-height: 100%;
+    min-height: 700px;
     min-width: 320px;
     max-width: 440px;
+    overflow-y: auto;
     background-color: $color-white__background;
     display: flex;
     flex-direction: column;
@@ -78,7 +79,11 @@
       border-radius: 6px;
     }
     :hover::before {
-      content: url('img/highlight.svg');
+      content: url('/img/highlight.svg');
+      /*картинки не работали из-за неправильного пути, однако тут когда я указываю правильный для гита путь
+      ломается все и я не могу на гитхаб сохранить проект, поэтому я сделал бордер лефт на всякий случай еще*/
+      border-left: 4px solid $color-mint__background;
+      border-radius: -10px;
       position: absolute;
       left: -5px;
       top: 5px;

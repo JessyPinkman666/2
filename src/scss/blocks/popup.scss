@@ -5,14 +5,24 @@
   background-color: rgba(255, 255, 255, 0.801);
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 100;
   display: flex;
   justify-content: right;
-  overflow-Y: auto;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
   &__wrapper {
     min-height: 100%;
     min-width: 320px;
     max-width: 440px;
     background-color: $color-white__background;
   }
+}
+
+
+
+.popup.open {
+  visibility: visible;
+  opacity: 1;
 }
