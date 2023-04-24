@@ -43,12 +43,12 @@
             <img src="img/divider.svg">
           </li>
           <li class="menu__item menu__item--repair">
-            <button class="menu__button" aria-label="Оставить заявку">
+            <button class="menu__button" type="button" aria-label="Оставить заявку">
               <img src="img/repair.svg" alt="Оставить заявку" class="repair__img">
             </button>
           </li>
           <li class="menu__item menu__item--status">
-            <button class="menu__button" aria-label="Статус ремонта">
+            <button class="menu__button" type="button" aria-label="Статус ремонта">
               <img src="img/search.svg" alt="Оставить заявку" class="status__img">
             </button>
           </li>
@@ -65,7 +65,7 @@
             <ul class="hiddenMenu__menu">
               <div class="hiddenMenu__leftSide">
                 <li class="hiddenMenu__item hiddenMenu__item--burger">
-                  <button class="hiddenMenu__btn hiddenMenu__btn--burger" aria-label="Выйти на главную страницу">
+                  <button class="hiddenMenu__btn hiddenMenu__btn--burger" type="button" aria-label="Выйти на главную страницу">
                     <img src="img/burger1.svg" alt="Назад">
                   </button>
                 </li>
@@ -77,7 +77,7 @@
               </div>
               <div class="hiddenMenu__rightSide">
                 <li class="hiddenMenu__item hiddenMenu__item--search">
-                  <button class="hiddenMenu__btn hiddenMenu__btn--search" aria-label="Поиск">
+                  <button class="hiddenMenu__btn hiddenMenu__btn--search" type="button" aria-label="Поиск">
                     <img src="img/search.svg" alt="Поиск">
                   </button>
                 </li>
@@ -352,10 +352,10 @@
               <div class="brand__content"><img src="img/Lenovo.svg" alt="Lenovo" class="brand__img"><a href="" class="brand__link" aria-label="Lenovo"></a></div>
             </li>
           </ul>
-          <button type="button" class="table__brandButton--more btn">
+          <button type="button" class="table__brandButton--more btn" aria-label="Показать весь текст">
             Показать все
           </button>
-          <button type="button" class="table__brandButton--hide visually--hidden btn">
+          <button type="button" class="table__brandButton--hide visually--hidden btn" aria-label="Скрыть текст">
             Скрыть
           </button>
         </section>
@@ -486,10 +486,10 @@
               </div>
             </li>
           </ul>
-          <button type="button" class="table__deviceButton--more btn">
+          <button type="button" aria-label="Показать весь текст" class="table__deviceButton--more btn">
             Показать все
           </button>
-          <button type="button" class="table__deviceButton--hide visually--hidden btn">
+          <button type="button" aria-label="Скрыть текст" class="table__deviceButton--hide visually--hidden btn">
             Скрыть
           </button>
         </section>
@@ -587,31 +587,31 @@
               <div class="sheet__cell sheet__cell--services">Диагностика</div>
               <div class="sheet__cell">Бесплатно</div>
               <div class="sheet__cell">30 мин</div>
-              <div class="sheet__cell"><button class="sheet__button"></button></div>
+              <div class="sheet__cell"><button type="button" aria-label="Заказать услугу" class="sheet__button"></button></div>
             </div>
             <div class="sheet__row">
               <div class="sheet__cell sheet__cell--services">Замена дисплея</div>
               <div class="sheet__cell">1 000 ₽</div>
               <div class="sheet__cell">30-120 мин</div>
-              <div class="sheet__cell"><button class="sheet__button"></button></div>
+              <div class="sheet__cell"><button type="button" aria-label="Заказать услугу" class="sheet__button"></button></div>
             </div>
             <div class="sheet__row">
               <div class="sheet__cell sheet__cell--services">Замена полифонического динамика</div>
               <div class="sheet__cell">1 000 ₽</div>
               <div class="sheet__cell">30-120 мин</div>
-              <div class="sheet__cell"><button class="sheet__button"></button></div>
+              <div class="sheet__cell"><button type="button" aria-label="Заказать услугу" class="sheet__button"></button></div>
             </div>
             <div class="sheet__row">
               <div class="sheet__cell sheet__cell--services">Тестирование с выдачей технического заключения</div>
               <div class="sheet__cell">1 000 ₽</div>
               <div class="sheet__cell">30-120 мин</div>
-              <div class="sheet__cell"><button class="sheet__button"></button></div>
+              <div class="sheet__cell"><button type="button" aria-label="Заказать услугу" class="sheet__button"></button></div>
             </div>
             <div class="sheet__row">
               <div class="sheet__cell sheet__cell--services">Замена программного обеспечения</div>
               <div class="sheet__cell">1 000 ₽</div>
               <div class="sheet__cell">30-120 мин</div>
-              <div class="sheet__cell"><button class="sheet__button"></button></div>
+              <div class="sheet__cell"><button type="button" aria-label="Заказать услугу" class="sheet__button"></button></div>
             </div>
           </div>
           
@@ -624,7 +624,7 @@
           </p>
           <div class="bottomContent__link">
             <link rel="stylesheet" href="#" class="bottomContent__link--text">
-            Получить коммерческое предложение <img src="img/Line.svg" alt="" class="bottomContent__link--img">
+            Получить коммерческое предложение <img src="img/Line.svg" alt="Получить коммерческое предложение" class="bottomContent__link--img">
             
           </div>
         </article>
@@ -647,7 +647,7 @@
                 Обратная связь
               </div>
               <form class="feedback__form" action="index.html" method="post">
-                <input class="feedback__input feedback__input--name" required type="text" id="name" name="name" placeholder="Имя">
+                <input class="feedback__input feedback__input--name" tabindex="1" required type="text" id="name" name="name" placeholder="Имя">
                 <input class="feedback__input feedback__input--tel" required type="tel" id="mail" name="email" placeholder="Телефон">
                 <input class="feedback__input feedback__input--email" required type="email" id="password" name="password" placeholder="Электронная почта">
                 <textarea class="feedback__input feedback__input--message" name="message" cols="1" rows="10" placeholder="Сообщение"></textarea>
@@ -676,7 +676,7 @@
                 Заказать звонок
               </div>
               <form class="phone__form" action="index.html" method="post">
-                <input class="phone__input phone__input--tel" required type="tel" id="mail" name="email" placeholder="Телефон">
+                <input tabindex="1" class="phone__input phone__input--tel" required type="tel" name="tel" placeholder="Телефон">
                 <div class="phone__text">
                   Нажимая “отправить”, вы даете согласие на <a href="#" class="phone__link" aria-label="Ссылка на документ об обработке персональных данных">обработку персональных
                     данных</a> и соглашаетесь с нашей<a href="#" class="phone__link" aria-label="Ссылка на политику кнфеденциальности">
