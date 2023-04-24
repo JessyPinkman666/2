@@ -1373,15 +1373,22 @@ body {
   background-color: rgba(255, 255, 255, 0.801);
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 100;
   display: flex;
   justify-content: right;
-  overflow-Y: auto; }
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s; }
   .popup__wrapper {
     min-height: 100%;
     min-width: 320px;
     max-width: 440px;
     background-color: #ffffff; }
+
+.popup.open {
+  visibility: visible;
+  opacity: 1; }
 
 .feedback__header {
   margin: 0;
@@ -1554,19 +1561,20 @@ body {
   cursor: pointer; }
 
 .hiddenMenu {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: left;
-  z-index: 1; }
+  z-index: 20; }
   @media (min-width: 1440px) {
     .hiddenMenu {
       background-color: transparent;
       position: static;
       display: block; } }
   .hiddenMenu__wrapper {
-    min-height: 100%;
+    min-height: 700px;
     min-width: 320px;
     max-width: 440px;
+    overflow-y: auto;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -1676,6 +1684,9 @@ body {
   display: flex;
   justify-content: left;
   z-index: 1; }
+
+.noScroll {
+  overflow: hidden; }
 
 /**
  * Swiper 9.2.0
