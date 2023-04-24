@@ -4,14 +4,19 @@ const exit = document.querySelector('.phone__exit')
 const popup = document.querySelector('.popup')
 const body = document.querySelector('.body')
 const phoneHidden = document.querySelector('.hiddenMenu__btn--phone')
+const input = document.querySelector('.phone__input--tel')
 
 phone.addEventListener('click', function (e) {
+  e.preventDefault()
   popupPhone.classList.add('open')
   body.classList.add('noScroll')
+  input.focus()
 })
 phoneHidden.addEventListener('click', function (e) {
   popupPhone.classList.add('open')
   body.classList.add('noScroll')
+  e.preventDefault()
+  input.focus()
 })
 exit.addEventListener('click', function (e) {
   popupPhone.classList.remove('open')
@@ -35,23 +40,3 @@ popupPhone.addEventListener('click', (e) => {
     body.classList.remove('noScroll')
   }
 })
-
-// const phoneBtn = document.querySelector('.menu__item--phone')
-// const hiddenPhoneBtn = document.querySelector('.hiddenMenu__item--phone')
-// const phonePopup = document.querySelector('.popup .phone')
-// const phoneExit = document.querySelector('.phone__exit')
-// const body = document.querySelector('.body')
-
-// phoneBtn.addEventListener('click', function (evt) {
-//   phonePopup.classList.toggle('visually--hidden')
-//   body.classList.toggle('noScroll')
-// })
-// phoneExit.addEventListener('click', function (evt) {
-//   phonePopup.classList.toggle('visually--hidden')
-//   body.classList.toggle('noScroll')
-// })
-
-// hiddenPhoneBtn.addEventListener('click', function (evt) {
-//   phonePopup.classList.toggle('visually--hidden')
-//   body.classList.toggle('noScroll')
-// })

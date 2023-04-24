@@ -2,11 +2,11 @@
   min-height: 100vh;
   display: flex;
   justify-content: left;
-  z-index: 20;
+  z-index: 120;
   @media (min-width: $sreen-superLarge) {
     background-color: transparent;
     position: static;
-    display: block;
+    display: flex;
   }
   &__wrapper {
     min-height: 700px;
@@ -78,7 +78,7 @@
       background-color: #ffffff;
       border-radius: 6px;
     }
-  :hover::before {
+    :hover::before {
       /*картинки не работали из-за неправильного пути, однако тут когда я указываю правильный для гита путь
         ломается все и я не могу на гитхаб сохранить проект, поэтому я сделал бордер лефт на всякий случай еще*/
       border-left: 4px solid $color-mint__background;

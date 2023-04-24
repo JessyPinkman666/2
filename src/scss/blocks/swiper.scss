@@ -1,4 +1,5 @@
 .swiper {
+  z-index: 1;
   &__section {
     @media (min-width: $screen-medium) {
       display: none;
@@ -8,6 +9,7 @@
     margin-bottom: 40px;
     min-width: 0;
     padding-top: 16px;
+    z-index: 1;
   }
   &-slide {
     margin: 16px;

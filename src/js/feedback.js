@@ -4,14 +4,19 @@ const popupFeedback = document.getElementById('popup__feedback')
 const exit = document.querySelector('.feedback__exit')
 const popup = document.querySelector('.popup')
 const body = document.querySelector('.body')
+const input = document.querySelector('.feedback__input--name')
 
 feedback.addEventListener('click', function (e) {
   popupFeedback.classList.add('open')
   body.classList.add('noScroll')
+  e.preventDefault()
+  input.focus()
 })
 hiddenFeedback.addEventListener('click', function (e) {
   popupFeedback.classList.add('open')
   body.classList.add('noScroll')
+  e.preventDefault()
+  input.focus()
 })
 exit.addEventListener('click', function (e) {
   popupFeedback.classList.remove('open')
@@ -35,5 +40,3 @@ popup.addEventListener('click', (e) => {
     body.classList.remove('noScroll')
   }
 })
-
-

@@ -6,19 +6,19 @@ const body = document.querySelector('.body')
 burgerButton.addEventListener('click', function (evt) {
   hiddenMenu.classList.remove('visuallyHiddenMenu')
   hiddenMenu.classList.add('blur')
-  body.classList.toggle('noScroll')
+  body.classList.add('noScroll')
 })
 cross.addEventListener('click', function (evt) {
   hiddenMenu.classList.add('visuallyHiddenMenu')
   hiddenMenu.classList.remove('blur')
-  body.classList.toggle('noScroll')
+  body.classList.remove('noScroll')
 })
 
 window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     hiddenMenu.classList.add('visuallyHiddenMenu')
     hiddenMenu.classList.remove('blur')
-    body.classList.add('noScroll')
+    body.classList.remove('noScroll')
   }
 })
 
