@@ -1624,14 +1624,13 @@ body {
     background-color: #ffffff;
     border-radius: 6px; }
   .hiddenMenu__navItem :hover::before {
-    content: url("/img/highlight.svg");
     /*картинки не работали из-за неправильного пути, однако тут когда я указываю правильный для гита путь
-      ломается все и я не могу на гитхаб сохранить проект, поэтому я сделал бордер лефт на всякий случай еще*/
+        ломается все и я не могу на гитхаб сохранить проект, поэтому я сделал бордер лефт на всякий случай еще*/
     border-left: 4px solid #41f6d7;
-    border-radius: -10px;
+    content: url("/img/highlight.svg");
     position: absolute;
-    left: -5px;
-    top: 5px; }
+    left: -8px;
+    top: 8px; }
   .hiddenMenu__navLink {
     display: inline-block;
     text-decoration: none;
